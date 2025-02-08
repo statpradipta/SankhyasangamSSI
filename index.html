@@ -168,7 +168,7 @@
  </head>
  <body class="font-jetbrains-mono bg-gray-100">
   <!-- Navbar -->
-  <nav class="fixed w-full bg-white p-4 shadow-lg z-10">
+  <nav class="fixed w-full bg-white p-4 shadow-lg z-10 shadow-2xl">
    <div class="container mx-auto flex justify-between items-center">
     <img alt="Symbiosis Statistical Institute Logo" class="h-12" height="48" src="ssilogo.png" />
     <div class="block lg:hidden">
@@ -279,7 +279,7 @@
       InterpretingUncertainty...
       </p> -->
       <div class="cont mt-20">
-        <a href="https://forms.gle/R2A85wcDHnYKZzF56" class="button type--A">
+        <a href="https://forms.gle/R2A85wcDHnYKZzF56" class="button type--B">
           <div class="button__line"></div>
           <div class="button__line"></div>
           <span class="button__text">REGISTER</span>
@@ -292,8 +292,8 @@
             --back_color: #008cff;
           }
           .type--B {
-            --line_color: #1b1919;
-            --back_color: #e9ecff;
+            --line_color: #ffffff;
+            --back_color: #c71ee9;
           }
           .type--C {
             --line_color: #00135c;
@@ -591,7 +591,7 @@
     </div>
   </section>
   <!-- About Section -->
-  <section class="py-20 fade-in" id="about">
+  <section class="py-20 fade-in bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30" id="about">
    <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-4">
      About <span style="font-family:'Cedarville Cursive' ;">SankhyaSangam</span>
@@ -635,88 +635,75 @@
    </div>
   </section>
   <!-- Schedule Section -->
-  <section class="py-20 bg-gray-200" id="schedule">
-   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-4">
+  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" id="schedule">
+    <div class="container mx-auto text-center">
+     <h2 class="text-4xl font-bold mb-8 text-black">
       Event Schedule
-     <!--<span class="bg-blue-900 shadow-xl rounded-tr-xl text-white rounded-bl-xl px-2">Event Schedule</span><-->
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-     <div class="bg-white hover:shadow-xl hover:scale-110 duration-300 p-6 rounded-lg shadow-lg bg-gradient-to-r from-indigo-600 to-pink-400  hover:brightness-110  hover:bg-gradient-to-r from-indigo-600 via-pink-500 to-indigo-600">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Pariksha
-      </h3>
-      <p class="text-lg">
-      26th February 2025
-      </p>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-gradient-to-r from-pink-400 to-indigo-600  filter hover:brightness-110">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Chintan
-      </h3>
-      <p class="text-lg">
-       27th - 28th February 2025
-      </p>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-gradient-to-r from-indigo-600 to-pink-400 filter hover:brightness-110">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Vishleshan
-      </h3>
-      <p class="text-lg">
-       2nd March 2025
-      </p>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-gradient-to-r from-pink-400 to-indigo-600 filter hover:brightness-110 hover:bg-gradient-to-r from-indigo-600 via-pink-500 to-indigo-600">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Results
-      </h3>
-      <p class="text-lg">
-       3rd March 2025
-      </p>
+     </h2>
+     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+        Sankhya Pariksha
+       </h3>
+       <p class="text-lg text-gray-200">
+        26th February 2025
+       </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+        Sankhya Chintan
+       </h3>
+       <p class="text-lg text-gray-200">
+        27th - 28th February 2025
+       </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-indigo-600 to-blue-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+        Sankhya Vishleshan
+       </h3>
+       <p class="text-lg text-gray-200">
+        2nd March 2025
+       </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+        Results
+       </h3>
+       <p class="text-lg text-gray-200">
+        3rd March 2025
+       </p>
+      </div>
      </div>
     </div>
-   </div>
-  </section>
+   </section>
   <!-- Rounds Section -->
-  <section class="py-20" id="rounds">
-   <div class="container mx-auto text-center ">
-    <h2 class="text-4xl font-bold mb-4">
-     Round Structure
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-[radial-gradient(circle_at_top,_#ec4899,_#3b82f6)] filter hover:brightness-110">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Pariksha
-      </h3>
-      <p class="text-lg text-justify hyphens-auto">
-        This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.
-      </p>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-gradient-to-t from-indigo-400 to-indigo-600 filter hover:brightness-110">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Chintan
-      </h3>
-      <p class="text-lg text-justify hyphens-auto">
-        In this round, <span class="font-semibold">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span>
-      </p>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-110 duration-300 bg-[radial-gradient(circle_at_top,_#ec4899,_#3b82f6)] filter hover:brightness-110">
-      <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
-       Sankhya Vishleshan
-      </h3>
-      <p class="text-lg text-justify hyphens-auto">
-        Finalists will present their projects to a panel of <span class="font-semibold">experts.</span> They will explain how their solution supports the 
-        <a class="font-semibold" href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a> 
-        and how their code can make a real-world impact. Judges will evaluate their 
-        <span class="font-semibold text-transform: capitalize">interpretation, technical skills, visualization, and presentation.</span>
-      </p>      
-     </div>
+  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" id="rounds">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8 text-black">Round Structure</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Pariksha</h3>
+                <p class="text-lg text-gray-200">This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold text-white">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Chintan</h3>
+                <p class="text-lg text-gray-200">In this round, <span class="font-semibold text-white">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold text-white">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span></p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-indigo-600 to-blue-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Vishleshan</h3>
+                <p class="text-lg text-gray-200">Finalists will present their projects to a panel of <span class="font-semibold text-white">experts.</span> They will explain how their solution supports the 
+                    <a class="font-semibold text-white" href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a> 
+                    and how their code can make a real-world impact. Judges will evaluate their 
+                    <span class="font-semibold text-white text-transform: capitalize">interpretation, technical skills, visualization, and presentation.</span></p>
+            </div>
+        </div>
     </div>
-   </div>
   </section>
+
   <!-- VIPLAV Section -->
-  <section class="bg-gray-200 py-20" id="viplav">
+  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30" id="viplav">
    <div class="container mx-auto text-center">
+    
     <h2 class="text-4xl font-bold italic mb-4">
      VIPLAV - <span style="font-family:'Cedarville Cursive' ;">Same Blood, New Veins</span>
     </h2>
@@ -856,7 +843,7 @@
     </div>
   </section>
   <!-- About SSI Section -->
-  <section class="bg-gray-200 py-20">
+  <section class="bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 py-20">
    <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-4">
      About SSI
@@ -919,7 +906,7 @@
   <footer class="bg-cover bg-bottom text-white py-4" style="background-image: url('bg2.png');">
    <div class="container mx-auto text-center">
     <p>
-     v2.6 © 2025 Symbiosis Statistical Institute. All rights reserved.
+     v3.0 © 2025 Symbiosis Statistical Institute. All rights reserved.
     </p>
     <p class="text-white italic">
      Designed by
