@@ -8,21 +8,81 @@
   </script>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;family=Geo:ital@0;1&amp;family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Kalam:wght@300;400;700&amp;family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kalam:wght@300;400;700&family=Silkscreen:wght@400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   
   <style>
-   .cedarville-cursive-regular {
-           font-family: "Cedarville Cursive", sans-serif;
-           font-weight: 400;
-           font-style: normal;
-       }
+        @font-face {
+        font-family: "bs";
+        src: url("BrittanySignature.ttf")format("truetype");
+        }
        
        .silkscreen-regular {
            font-family: "Silkscreen", sans-serif;
            font-weight: 400;
            font-style: normal;
        }
+       .zilla-slab-light {
+          font-family: "Zilla Slab", serif;
+          font-weight: 300;
+          font-style: normal;
+        }
+
+        .zilla-slab-regular {
+          font-family: "Zilla Slab", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .zilla-slab-medium {
+          font-family: "Zilla Slab", serif;
+          font-weight: 500;
+          font-style: normal;
+        }
+
+        .zilla-slab-semibold {
+          font-family: "Zilla Slab", serif;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .zilla-slab-bold {
+          font-family: "Zilla Slab", serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .zilla-slab-light-italic {
+          font-family: "Zilla Slab", serif;
+          font-weight: 300;
+          font-style: italic;
+        }
+
+        .zilla-slab-regular-italic {
+          font-family: "Zilla Slab", serif;
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        .zilla-slab-medium-italic {
+          font-family: "Zilla Slab", serif;
+          font-weight: 500;
+          font-style: italic;
+        }
+
+        .zilla-slab-semibold-italic {
+          font-family: "Zilla Slab", serif;
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        .zilla-slab-bold-italic {
+          font-family: "Zilla Slab", serif;
+          font-weight: 700;
+          font-style: italic;
+        }
+
 
        .silkscreen-bold {
            font-family: "Silkscreen", sans-serif;
@@ -166,7 +226,7 @@
        }
   </style>
  </head>
- <body class="font-jetbrains-mono bg-gray-100">
+ <body class="text-2xl bg-no-repeat bg-cover bg-fixed bg-top min-h-screen text-white" style="font-family: 'zilla slab'; background-image: url('bg1.png');">
   <!-- Navbar -->
   <nav class="fixed w-full bg-white p-4 shadow-lg z-10 shadow-2xl">
    <div class="container mx-auto flex justify-between items-center">
@@ -194,6 +254,11 @@
       </a>
      </li>
      <li>
+      <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
+       Contact
+      </a>
+     </li>
+     <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#viplav">
        VIPLAV
       </a>
@@ -203,11 +268,7 @@
        Sponsors
       </a>
      </li>
-     <li>
-      <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
-       Contact
-      </a>
-     </li>
+     
     </ul>
    </div>
    <div class="lg:hidden hidden transition-all duration-300 ease-in-out" id="dropdown-content">
@@ -228,6 +289,11 @@
       </a>
      </li>
      <li>
+      <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
+       Contact
+      </a>
+     </li>
+     <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#viplav">
        VIPLAV
       </a>
@@ -237,11 +303,7 @@
        Sponsors
       </a>
      </li>
-     <li>
-      <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
-       Contact
-      </a>
-     </li>
+     
     </ul>
    </div>
   </nav>
@@ -266,19 +328,22 @@
        }
   </script>
   <!-- Hero Section -->
-  <section class="bg-cover bg-top text-white py-20  fade-in" style="background-image: url('bg1.png');">
+  
+  <section class="text-white py-10  fade-in">
     <div class="container mx-auto text-center">
-      <h1 class="text-4xl mb-4 uppercase font-bold mt-20" style="font-family: 'Times New Roman', Times, serif;">Symbiosis Statistical Institute</h1> <span class="text-gray-100" style="font-family: 'Cedarville Cursive'; ">Presents</span>
-      <h1 class="text-7xl font-semibold text-white mb-4" style="font-family: 'Kalam';">
+      <h1 class="text-4xl mb-4 uppercase font-bold mt-20" style="font-family: 'Times New Roman', Times, serif;">Symbiosis Statistical Institute</h1> <span class="text-gray-100 text-2xl" style="font-family: 'bs'; color:#e1c340 ">Presents</span>
+      <h1 class="text-6xl font-semibold text-white mt-4 mb-4" style="font-family: 'Kalam';">
       सांख्यसंगम्
       </h1>
-      <h2 class="text-3xl mb-4" style="font-family: 'Geo';">
-      InACT 2.0 - The Humanitarian Hackathon
+      <h2 class="text-3xl mb-4" style="font-family: 'Zilla Slab'; font-style: italic;">
+      InACT 2.0 - The Humanitarian
       </h2>
+      <h1 class="text-8xl" style="font-family: 'Zilla Slab';">HACKATH<img class="mx-auto inline align-middle" height="80" src="world.png" width="80" style="position: relative; top: -10px;">N</h1>
+      <!-- <img alt="SankhyaSangam Logo" class="mx-auto" src="hack.png" /> -->
       <!-- <p class="text-xl mb-8" style="font-family: 'Arial';">
       InterpretingUncertainty...
       </p> -->
-      <div class="cont mt-20">
+      <div class="cont mt-5">
         <a href="https://forms.gle/R2A85wcDHnYKZzF56" class="button type--B">
           <div class="button__line"></div>
           <div class="button__line"></div>
@@ -292,8 +357,8 @@
             --back_color: #008cff;
           }
           .type--B {
-            --line_color: #ffffff;
-            --back_color: #c71ee9;
+            --line_color: #e1c340;
+            --back_color: #800020;
           }
           .type--C {
             --line_color: #00135c;
@@ -305,7 +370,7 @@
             width: 260px;
             height: 64px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 24px;
             font-weight: bold;
             color: var(--line_color);
             letter-spacing: 2px;
@@ -313,7 +378,7 @@
           }
           .button__text {
             display: flex;
-            font-size: medium;
+            font-size: larger;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -589,35 +654,36 @@
     </script>
     </a>
     </div>
-  </section>
+  <!-- </section> -->
   <!-- About Section -->
-  <section class="py-20 fade-in bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30" id="about">
-   <div class="container mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-4">
-     About <span style="font-family:'Cedarville Cursive' ;">SankhyaSangam</span>
+  <!-- <section class="py-20 fade-in" id="about" style="font-family:'zilla slab';"> -->
+   <div class="container mx-auto text-center py-20" id="about" style="font-family:'zilla slab';">
+    <h2 class="text-6xl mb-7">
+     About <span class="font-bold ">SankhyaSangam</span>
     </h2>
-    <p class="text-xl mb-8">
+    <p class="text-4xl mb-8">
      <span class="font-semibold italic">SankhyaSangam: InACT 2.0 – The Humanitarian Hackathon</span> is an exciting initiative by <span class="font-semibold">Symbiosis Statistical Institute</span> designed to challenge and inspire budding data enthusiasts. This event provides a unique platform for students to apply their statistical and analytical skills to real-world social issues, driving impactful and data-driven solutions.
     </p>
-    <p class="text-xl mb-8">
+    <p class="text-4xl mb-8">
      Through collaboration, problem-solving, and innovation, participants will get hands-on exposure to the power of data in addressing humanitarian challenges. SankhyaSangam is not just a competition—it is an opportunity to harness the potential of statistics for social good and make a meaningful difference.
     </p>
-    <div class="relative inline-flex items-center justify-center gap-4 group">
+    <div class="text-5xl relative inline-flex items-center justify-center gap-4 group">
       <div
-        class="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+        class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-2xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
       ></div>
       <a
         role="button"
-        class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+        class="group relative inline-flex items-center justify-center text-2xl rounded-3xl bg-gray-900 px-20 py-5 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
         title="download"
         href="Hackathon - General Rules.pdf"
-        >Rules<svg
+        >Rules
+        <svg
           aria-hidden="true"
           viewBox="0 0 10 10"
-          height="10"
-          width="10"
+          height="16"
+          width="16"
           fill="none"
-          class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
+          class="text-7xl mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
         >
           <path
             d="M0 5h7"
@@ -631,83 +697,111 @@
       </a>
     </div>
     
+    
     <!-- <img alt="Participants collaborating during a hackathon event" class="mx-auto rounded-lg shadow-lg" height="400" src="poster1" width="600"/> -->
    </div>
-  </section>
+  <!-- </section> -->
   <!-- Schedule Section -->
-  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" id="schedule">
-    <div class="container mx-auto text-center">
-     <h2 class="text-4xl font-bold mb-8 text-black">
+  <!-- <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" style="font-family:'zilla slab';"id="schedule"> -->
+    <div class="container mx-auto text-center py-20" id="schedule">
+     <h2 class="text-6xl font-bold mb-8 mt-20">
       Event Schedule
      </h2>
      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Zilla Slab' ;">
         Sankhya Pariksha
        </h3>
-       <p class="text-lg text-gray-200">
-        26th February 2025
+        </br>
+       <p class="text-gray-200">
+        26 February 2025
        </p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+       <h3 class="text-2xl font-bold mb-2" style="font-family:'Zilla Slab' ;">
         Sankhya Chintan
        </h3>
-       <p class="text-lg text-gray-200">
-        27th - 28th February 2025
+       </br>
+       <p class="text-gray-200">
+        27 February 2025
        </p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-indigo-600 to-blue-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+       <h3 class="text-2xl font-bold mb-2 text-center" style="font-family:'Zilla Slab' ;">
         Sankhya Vishleshan
        </h3>
-       <p class="text-lg text-gray-200">
-        2nd March 2025
+       </br>
+       <p class="text-gray-200">
+        02 March 2025
        </p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-       <h3 class="text-2xl font-bold mb-2" style="font-family:'Cedarville Cursive' ;">
+       <h3 class="text-3xl font-bold mb-2" style="font-family:'Zilla Slab' ;">
         Results
        </h3>
-       <p class="text-lg text-gray-200">
-        3rd March 2025
+       </br>
+       <p class="text-gray-200">
+        03 March 2025
        </p>
       </div>
      </div>
     </div>
-   </section>
+   <!--</section> -->
   <!-- Rounds Section -->
-  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" id="rounds">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8 text-black">Round Structure</h2>
+  <!-- <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" style="font-family:'zilla slab';" id="rounds"> -->
+    <div class="container mx-auto text-center py-20" id="rounds">
+        <h2 class="text-6xl font-bold mb-8 ">Round Structure</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Pariksha</h3>
-                <p class="text-lg text-gray-200">This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold text-white">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.</p>
+                <h3 class="text-3xl font-bold mb-2 text-white" style="font-family:'Zilla Slab';">Sankhya Pariksha</h3>
+                <p class="text-gray-200">This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold text-white">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.</p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Chintan</h3>
-                <p class="text-lg text-gray-200">In this round, <span class="font-semibold text-white">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold text-white">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span></p>
+                <h3 class="text-3xl font-bold mb-2 text-white" style="font-family:'Zilla Slab';">Sankhya Chintan</h3>
+                <p class="text-gray-200">In this round, <span class="font-semibold text-white">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold text-white">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span></p>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-indigo-600 to-blue-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-                <h3 class="text-2xl font-bold mb-2 text-white" style="font-family:'Cedarville Cursive';">Sankhya Vishleshan</h3>
-                <p class="text-lg text-gray-200">Finalists will present their projects to a panel of <span class="font-semibold text-white">experts.</span> They will explain how their solution supports the 
+                <h3 class="text-3xl font-bold mb-2 text-white" style="font-family:'Zilla Slab';">Sankhya Vishleshan</h3>
+                <p class="text-gray-200">Finalists will present their projects to a panel of <span class="font-semibold text-white">experts.</span> They will explain how their solution supports the 
                     <a class="font-semibold text-white" href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a> 
                     and how their code can make a real-world impact. Judges will evaluate their 
                     <span class="font-semibold text-white text-transform: capitalize">interpretation, technical skills, visualization, and presentation.</span></p>
             </div>
         </div>
+        <div class="py-20" id="contact">
+        <p class="text-2xl mb-4 italic  uppercase">For any queries you can contact us at:</p>
+          <span class="text-lg mb-4">
+            <!-- <strong>
+            Phone numbers:
+            </strong> -->
+            
+            <!-- <span class="font-semibold">SSI Office:</span> 020 25925163 / 020 25669310 -->
+            
+            <span class="font-semibold">Support:</span><a class="text-blue-200" href="telto:9606852552">+91-9606852552</a> / <a class="text-blue-200" href="telto:9474879126">+91-9474879126</a>
+          </span>
+         <span class="text-lg mb-4">
+         </br>
+          <strong>
+           Mail:
+          </strong>
+          <a class="text-blue-200" href="mailto:events@ssi.edu.in">
+           events@ssi.edu.in
+          </a>
+          </p>
+        </p>
+        </div>
     </div>
-  </section>
+  <!-- </section> -->
+   
 
   <!-- VIPLAV Section -->
-  <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30" id="viplav">
-   <div class="container mx-auto text-center">
+  <!-- <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30" id="viplav" style="font-family:'zilla slab';"> -->
+   <div class="container mx-auto text-center py-20"  id="viplav">
     
-    <h2 class="text-4xl font-bold italic mb-4">
-     VIPLAV - <span style="font-family:'Cedarville Cursive' ;">Same Blood, New Veins</span>
+    <h2 class="text-6xl font-bold italic mb-4">
+     VIPLAV - <span style="font-family:'sans-serif' ;" >Same Blood, New Veins</span>
     </h2>
-    <p class="text-xl mb-8">
+    <p class="mb-8">
      VIPLAV means "revolution" in Sanskrit. Revolution represents a change; it is a passionate act of hope to bring about a positive change. 
      <br/>
      It signifies the spirit of "same blood, new veins," which characterizes the human urge to evolve and improve without losing the qualities that define us as human beings and remain connected to our roots.
@@ -734,38 +828,41 @@
       </p> -->
      </div>
     </div>
-    <p class="text-xl mb-8">
+    <p class="mb-8">
       <br/>
-      This fest is inclined towards the Future of STI (Science, Technology, and Innovation): Impact on Education, Skills, and Work, with the objective to acknowledge the significance of statistics, science, and technology by expanding horizons for analytical, problem-solving, and innovative thinking to spread awareness about the importance of scientific applications in daily life.
+      This fest is inclined towards the future of Science, Technology, and Innovation
+      : Impact on Education, Skills, and Work, with the objective to acknowledge the significance of statistics, science, and technology by expanding horizons for analytical, problem-solving, and innovative thinking to spread awareness about the importance of scientific applications in daily life.
     </p>
    </div>
   </section>
   <!-- Sponsors Section -->
-  <section id="Sponsors">
-    <div class="py-14">
-      <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+  <section id="Sponsors" >
+    
+    <!-- <div class="py-8 bg-white">
+      <div class="max-w-screen-xl mx-auto px-4 md:px-8" >
           <div class="max-w-xl mx-auto text-center">
-              <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl" style="font-family:'Cedarville Cursive' ;">
+              <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl" style="font-family:'zilla Slab' ;">
                   Meet Our Sponsors!
               </h3>
-              <!-- <p class="text-gray-600 mt-3">
+              
+               <p class="text-gray-600 mt-3"> 
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nibh nisl, vel egestas magna rhoncus at. Nunc elementum efficitur tortor in laoreet.
                 Designed by Pradipta Ghosh https://github.com/statpradipta
-              </p> -->
+              </p>
           </div>
           <div class="mt-12 flex justify-center">
               <ul class="inline-grid grid-cols-3 gap-x-10 gap-y-6 md:gap-x-16 md:grid-cols-3 lg:grid-cols-4">
   
-                  <!-- {/* LOGO 1 */} -->
-                <li>
-                  <img class="w-34 my-auto" src="ssilogo1.png" alt="logo-4" />
-                </li>
-              </ul>
-          </div>
-      </div>
-    </div>
+                  <!-- {/* LOGO 1 */}
+                <!-- <li> -->
+                  <!-- <img class="w-34 my-auto" src="ssilogo1.png" alt="logo-4" /> -->
+                <!-- </li>  -->
+              <!-- </ul> -->
+          <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
   </section>
-  <!-- About SSI Section -->
+  <!-- About SSI Section 
   <section class="bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 py-20">
    <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-4">
@@ -778,10 +875,10 @@
       </p>
     <!-- <p class="text-xl mb-8">
      The M.Sc. (Applied Statistics) program at SSI is designed to facilitate learning of application-oriented modules that teach advanced statistical methodologies and practices. Graduates of our programmes are well-prepared for careers in diverse domains such as Finance, Information Technology, Supply Chain Management, Retail, Pharma and others that require knowledge of Predictive Analysis, Forecasting, Natural Language Processing, and Market Research. Our programs also offer opportunities for employment in academia, research, consulting firms, non-governmental organizations, and doctoral studies, among other options.
-    </p> -->
+    </p> 
    </div>
   </section>
-  <!-- Contact Section -->
+  <!-- Contact Section 
   <section class="py-20" id="contact">
    <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-4">
@@ -824,12 +921,12 @@
      </div>
     </div>
    </div>
-  </section>
+  </section> -->
   <!-- Footer -->
-  <footer class="bg-cover bg-bottom text-white py-4" style="background-image: url('bg2.png');">
+  <footer class="text-lg bg-cover bg-bottom text-white py-4" style="background-image: url('bg2.png');">
    <div class="container mx-auto text-center">
     <p>
-     v3.0 © 2025 Symbiosis Statistical Institute. All rights reserved.
+     v4.1 © 2025 Symbiosis Statistical Institute. All rights reserved.
     </p>
     <p class="text-white italic">
      Designed by
