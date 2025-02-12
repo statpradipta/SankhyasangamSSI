@@ -238,6 +238,10 @@
      </button>
     </div>
     <ul class="hidden lg:flex space-x-4" id="nav-content">
+      <li>
+        <a class="hover:text-red-500 text-blue-600 font-bold" href="#">
+          Home
+      </li>
      <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#about">
        About
@@ -248,11 +252,11 @@
        Schedule
       </a>
      </li>
-     <li>
+     <!-- <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#rounds">
        Rounds
       </a>
-     </li>
+     </li> -->
      <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
        Contact
@@ -273,6 +277,10 @@
    </div>
    <div class="lg:hidden hidden transition-all duration-300 ease-in-out" id="dropdown-content">
     <ul class="flex flex-col space-y-2 mt-2">
+      <li>
+        <a class="hover:text-red-500 text-blue-600 font-bold" href="#">
+          Home
+      </li>
      <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#about">
        About
@@ -283,11 +291,11 @@
        Schedule
       </a>
      </li>
-     <li>
+     <!-- <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#rounds">
        Rounds
       </a>
-     </li>
+     </li> -->
      <li>
       <a class="hover:text-red-500 text-blue-600 font-bold" href="#contact">
        Contact
@@ -329,7 +337,7 @@
   </script>
   <!-- Hero Section -->
   
-  <section class="text-white py-10  fade-in">
+  <section class="text-white py-10  fade-in" id="#">
     <div class="container mx-auto text-center">
       <h1 class="text-4xl mb-4 uppercase font-bold mt-20" style="font-family: 'Times New Roman', Times, serif;">Symbiosis Statistical Institute</h1> <span class="text-gray-100 text-2xl" style="font-family: 'bs'; color:#e1c340 ">Presents</span>
       <h1 class="text-6xl font-semibold text-white mt-4 mb-4" style="font-family: 'Kalam';">
@@ -703,21 +711,250 @@
   <!-- </section> -->
   <!-- Schedule Section -->
   <!-- <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" style="font-family:'zilla slab';"id="schedule"> -->
-    <div class="container mx-auto text-center py-20" id="schedule">
-     <h2 class="text-6xl font-bold mb-8 mt-20">
+   <div class="container mx-auto px-4" id="schedule">
+    <h2 class="text-6xl text-center font-bold mb-8 mt-20">
       Event Schedule
-     </h2>
-     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
-       <h3 class="text-2xl font-bold mb-2" style="font-family:'Zilla Slab' ;">
-        Sankhya Pariksha
-       </h3>
-        </br>
-       <p class="text-gray-200">
-        26 February 2025
-       </p>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Card 1 -->
+      <div class="w-full min-h-[250px] border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] hover:shadow-[12px_12px_0_0_#000] transition-all duration-300 hover:scale-[1.02]">
+          <div class="flex flex-col h-full">
+              <div class="flex flex-col gap-2 mb-4">
+                  <h3 class="text-4xl font-black uppercase text-black hover:text-blue-800 transition-colors">
+                      Sankhya Pariksha
+                  </h3>
+                  <time class="inline-block border-2 border-black bg-purple-900 px-3 py-1 text-xl font-bold text-white hover:bg-blue-700 hover:text-yellow-300 transition-colors w-fit">
+                      26 February 2025
+                  </time>
+              </div>
+              <p class="border-l-4 border-indigo-500 pl-4 text-gray-800 hover:border-blue-500 transition-colors text-2xl">
+                  
+                This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.
+              </p>
+          </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
+
+      <!-- Card 2 -->
+      <div class="w-full min-h-[250px] border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] hover:shadow-[12px_12px_0_0_#000] transition-all duration-300 hover:scale-[1.02]">
+          <div class="flex flex-col h-full">
+              <div class="flex flex-col gap-2 mb-4">
+                  <h3 class="text-4xl font-black uppercase text-black hover:text-blue-800 transition-colors">
+                      Sankhya Chintan
+                  </h3>
+                  <time class="inline-block border-2 border-black bg-purple-900 px-3 py-1 text-xl font-bold text-white hover:bg-blue-700 hover:text-yellow-300 transition-colors w-fit">
+                      27 February 2025
+                  </time>
+              </div>
+              <p class="border-l-4 border-indigo-500 pl-4 text-gray-800 hover:border-blue-500 transition-colors text-2xl">
+                  In this round, <span class="font-semibold">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span>
+              </p>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full min-h-[250px] border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] hover:shadow-[12px_12px_0_0_#000] transition-all duration-300 hover:scale-[1.02]">
+          <div class="flex flex-col h-full">
+              <div class="flex flex-col gap-2 mb-4">
+                  <h3 class="text-4xl font-black uppercase text-black hover:text-blue-800 transition-colors">
+                      Sankhya Vishleshan
+                  </h3>
+                  <time class="inline-block border-2 border-black bg-purple-900 px-3 py-1 text-xl font-bold text-white hover:bg-blue-700 hover:text-yellow-300 transition-colors w-fit">
+                      02 March 2025
+                  </time>
+              </div>
+              <p class="border-l-4 border-indigo-500 pl-4 text-2xl text-gray-800 hover:border-blue-500 transition-colors">
+                  Finalists will present their projects to a panel of <span class="font-semibold">experts.</span> They will explain how their solution supports the <a class="font-semibold" href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a> and how their code can make a real-world impact. Judges will evaluate their <span class="font-semibold capitalize">interpretation, technical skills, visualization, and presentation.</span>
+              </p>
+          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full min-h-[250px] border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] hover:shadow-[12px_12px_0_0_#000] transition-all duration-300 hover:scale-[1.02]">
+          <div class="flex flex-col h-full">
+              <div class="flex flex-col gap-2 mb-4">
+                  <h3 class="text-4xl font-black uppercase text-black hover:text-blue-800 transition-colors">
+                      Sankhya Parinam
+                  </h3>
+                  <time class="inline-block border-2 border-black bg-purple-900 px-3 py-1 text-xl font-bold text-white hover:bg-blue-700 hover:text-yellow-300 transition-colors w-fit">
+                      03 March 2025
+                  </time>
+              </div>
+            </br>
+              <p class=" border-l-4 border-indigo-500 pl-4 text-5xl font-bold uppercase text-[#800020] hover:border-blue-500 transition-colors">
+              </br>  
+                Results</br>
+                 
+            </br>
+              </p>
+            </br>
+          </div>
+      </div>
+    </div>
+   </div> 
+    
+    <!-- <div class="container mx-auto text-center py-20" id="schedule">
+     
+     <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 gap-6">
+
+      
+        <article
+          class="flex w-full flex-col items-start justify-between border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-gradient-to-b hover:from-gray-200 hover:to-white shadow-[8px_8px_0_0_#000] transition-shadow duration-500 ease-in-out hover:shadow-[12px_12px_0_0_#000]"
+        >
+          <div class="mb-2 flex items-center gap-x-2 text-sm">
+            
+            <h3
+              class="text-left text-black group-hover:text-indigo-500 text-2xl font-black uppercase leading-6 text-black transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-blue-800">
+              <a
+                ><span class="absolute inset-0 max-w-xs"></span>Sankhya Pariksha</a
+              >
+            </h3>
+            <time
+              class="border-2 border-black bg-purple-900 px-3 py-1 font-bold text-white transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-700 hover:text-yellow-300"
+              datetime="2025-02-26"
+              >26 February 2025</time
+            >
+            
+          </div>
+          <div class="group relative">
+            
+            <p
+              class="text-md text-left mt-2 border-l-4 border-indigo-500 pl-4 leading-6 text-gray-800 transition-all duration-500 ease-in-out transform hover:border-blue-500 hover:text-gray-600"
+            >
+            This Humanitarian Hackathon begins with a quiz that tests participants on <span class="font-semibold">Logical Reasoning and Analytical Skills</span> at the undergraduate and postgraduate levels.</p>
+            </p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-2">
+            <div class="text-sm leading-6">
+              <p
+                class="font-black text-black transition-all duration-500 ease-in-out transform hover:scale-110"
+              >
+                
+              </p>
+              
+            </div>
+          </div>
+            </article>
+            <article
+              class="flex w-full flex-wrap items-start justify-between border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-gradient-to-b hover:from-gray-200 hover:to-white shadow-[8px_8px_0_0_#000] transition-shadow duration-500 ease-in-out hover:shadow-[12px_12px_0_0_#000]"
+            >
+              <div class="mb-2 flex items-center gap-x-2 text-sm">
+              
+                <h3
+                  class="text-left text-black group-hover:text-indigo-500 text-2xl font-black uppercase leading-6 text-black transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-blue-800">
+                  <a
+                    ><span class="absolute inset-0 max-w-xs"></span>Sankhya Chintan</a
+                  >
+                </h3>
+                <time
+                  class="border-2 border-black bg-purple-900 px-3 py-1 font-bold text-white transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-700 hover:text-yellow-300"
+                  datetime="2025-02-27"
+                  >27 February 2025</time
+                >
+                
+              </div>
+              <div class="group relative">
+                
+                <p
+                  class="text-md text-left mt-5 border-l-4 border-indigo-500 pl-4 leading-6 text-gray-800 transition-all duration-500 ease-in-out transform hover:border-blue-500 hover:text-gray-600"
+                >
+                In this round, <span class="font-semibold text-black">participants will receive problem statements and datasets to analyze.</span> They must write and submit their code within the given time, with the link of the GitHub Repository. This round tests their <span class="font-semibold text-black">Conceptual understanding, Data Analysis, Programming, and Technical Skills.</span></p>
+                </p>
+              </div>
+              <div class="relative mt-8 flex items-center gap-x-2">
+                <div class="text-sm leading-6">
+                  <p
+                    class="font-black text-black transition-all duration-500 ease-in-out transform hover:scale-110"
+                  >
+                    
+                  </p>
+                  
+                </div>
+              </div>
+            </article>
+            <article
+              class="flex w-full flex-col items-start justify-between border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-gradient-to-b hover:from-gray-200 hover:to-white shadow-[8px_8px_0_0_#000] transition-shadow duration-500 ease-in-out hover:shadow-[12px_12px_0_0_#000]"
+            >
+              <div class="mb-2 flex items-center gap-x-2 text-xs">
+                <div class="mb-2 flex items-center gap-x-2 text-sm">
+            
+                  <h3
+                    class="text-left text-black group-hover:text-indigo-500 text-2xl font-black uppercase leading-6 text-black transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-blue-800">
+                    <a
+                      ><span class="absolute inset-0 max-w-xs"></span>Sankhya Vishleshan</a
+                    >
+                  </h3>
+                  <time
+                    class="border-2 border-black bg-purple-900 px-3 py-1 font-bold text-white transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-700 hover:text-yellow-300"
+                    datetime="2025-03-02"
+                    >02 March 2025</time
+                  >
+                  
+                </div>
+              </div>
+              <div class="group relative">
+                <p
+                  class="text-md text-left mt-5 border-l-4 border-indigo-500 pl-4 leading-6 text-gray-800 transition-all duration-500 ease-in-out transform hover:border-blue-500 hover:text-gray-600"
+                >Finalists will present their projects to a panel of <span class="font-semibold text-black">experts.</span> They will explain how their solution supports the 
+                <a class="font-semibold text-black" href="https://sdgs.un.org/goals">United Nations Sustainable Development Goals (SDGs)</a> 
+                and how their code can make a real-world impact. Judges will evaluate their 
+                <span class="font-semibold text-black text-transform: capitalize">interpretation, technical skills, visualization, and presentation.</span></p>
+              </div>
+              <div class="relative mt-8 flex items-center gap-x-2">
+                <div class="text-sm leading-6">
+                  <p
+                    class="font-black text-black transition-all duration-500 ease-in-out transform hover:scale-110"
+                  >
+                    
+                  </p>
+                  
+                </div>
+              </div>
+            </article>
+            <article
+              class="flex w-full flex-col items-start justify-between border-4 border-black bg-gradient-to-b from-white via-gray-100 to-gray-200 p-6 shadow-[8px_8px_0_0_#000] transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-gradient-to-b hover:from-gray-200 hover:to-white shadow-[8px_8px_0_0_#000] transition-shadow duration-500 ease-in-out hover:shadow-[12px_12px_0_0_#000]"
+            >
+            <div class="mb-2 flex items-center gap-x-2 text-sm">
+            
+              <h3
+                class="text-left text-black group-hover:text-indigo-500 text-2xl font-black uppercase leading-6 text-black transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-blue-800">
+                <a
+                  ><span class="absolute inset-0 max-w-xs"></span>Sankhya Parinam</a
+                >
+              </h3>
+              <time
+                class="border-2 border-black bg-purple-900 px-3 py-1 font-bold text-white transition-all duration-500 ease-in-out transform hover:scale-110 hover:bg-blue-700 hover:text-yellow-300"
+                datetime="2025-03-03"
+                >03 March 2025</time
+              >
+              
+            </div>
+              <div class="group relative">
+                <h3
+                  class="group-hover:text-indigo-500 mt-3 text-2xl font-black uppercase leading-6 text-black transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-blue-800"
+                >
+                  <a class="text-6xl"
+                    ><span class="absolute inset-0 max-w-xs"></span></a
+                  >
+                </h3>
+                <p
+                  class="text-4xl text-md font-bold uppercase mt-5 border-l-4 border-indigo-500 pl-4 leading-6 text-gray-800 transition-all duration-500 ease-in-out transform hover:border-blue-500 hover:text-gray-600 #800020" style="color: #800020"
+                ></br>Results</br> </br></p>
+              </div>
+              <div class="relative mt-8 flex items-center gap-x-2">
+                <div class="text-sm leading-6">
+                  <p
+                    class="font-black text-black transition-all duration-500 ease-in-out transform hover:scale-110"
+                  >
+                    
+                  </p>
+                  
+                </div>
+              </div>
+            </article>
+     </div> -->
+    
+
+      <!-- <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-500 to-indigo-600 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
        <h3 class="text-2xl font-bold mb-2" style="font-family:'Zilla Slab' ;">
         Sankhya Chintan
        </h3>
@@ -745,11 +982,11 @@
        </p>
       </div>
      </div>
-    </div>
+    </div> -->
    <!--</section> -->
   <!-- Rounds Section -->
   <!-- <section class="py-20 bg-gradient-to-r from-blue-400/30 via-purple-400/30 to-pink-400/30 text-white" style="font-family:'zilla slab';" id="rounds"> -->
-    <div class="container mx-auto text-center py-20" id="rounds">
+    <!-- <div class="container mx-auto text-center py-20" id="rounds">
         <h2 class="text-6xl font-bold mb-8 ">Round Structure</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-600 to-purple-500 transition-transform transform hover:scale-105 hover:shadow-2xl duration-500">
@@ -767,22 +1004,23 @@
                     and how their code can make a real-world impact. Judges will evaluate their 
                     <span class="font-semibold text-white text-transform: capitalize">interpretation, technical skills, visualization, and presentation.</span></p>
             </div>
-        </div>
-        <div class="py-20" id="contact">
-        <p class="text-2xl mb-4 italic  uppercase">For any queries you can contact us at:</p>
-          <span class="text-lg mb-4">
+        </div>-->
+      <!-- </div> -->
+      <div class="mt-20 pt-20 mx-auto text-center" id="contact">
+        <p class="text-2xl mb-4 italic uppercase">For any queries you can contact us at:</p>
+          <span class="text-lg mb-10">
             <!-- <strong>
             Phone numbers:
             </strong> -->
             
             <!-- <span class="font-semibold">SSI Office:</span> 020 25925163 / 020 25669310 -->
             
-            <span class="font-semibold">Support:</span><a class="text-blue-200" href="tel:+919606852552">+91-9606852552</a> / <a class="text-blue-200" href="tel:+919474879126">+91-9474879126</a>
+            <span class="font-semibold">Support: </span><a class="text-blue-200" href="tel:+919606852552">+91-9606852552</a> / <a class="text-blue-200" href="tel:+919474879126">+91-9474879126</a>
           </span>
-         <span class="text-lg mb-4">
+         <span class="text-lg mb-10">
          </br>
           <strong>
-           Mail:
+           Mail: 
           </strong>
           <a class="text-blue-200" href="mailto:events@ssi.edu.in">
            events@ssi.edu.in
@@ -926,7 +1164,7 @@
   <footer class="text-lg bg-cover bg-bottom text-white py-4" style="background-image: url('bg2.png');">
    <div class="container mx-auto text-center">
     <p>
-     v4.1 © 2025 Symbiosis Statistical Institute. All rights reserved.
+     v4.2 © 2025 Symbiosis Statistical Institute. All rights reserved.
     </p>
     <p class="text-white italic">
      Designed by
